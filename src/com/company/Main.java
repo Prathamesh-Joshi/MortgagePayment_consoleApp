@@ -24,6 +24,14 @@ public class Main {
         System.out.println("Mortgage is :" + n1.format(emi));
 
         System.out.println("Your Interest is :" + n1.format(emi * periodInMonths - principle));
-
+System.out.println("Do you want to run Practice code? (Y/N):");
+		String practiseCode= sc1.nextLine();
+		
+		if (practiseCode.equalsIgnoreCase("Y")) {
+			JavaTutorialPractise.JavaPractise();
+		}
+		else {
+			System.out.println("Bye Bye!! Have a nice day.");
+		}
     }
 }
