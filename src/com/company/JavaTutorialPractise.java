@@ -2,7 +2,6 @@ package com.company;
 
 
 import java.awt.*;
-import java.io.BufferedReader;
 import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
@@ -142,11 +141,11 @@ public class JavaTutorialPractise {
        System.out.println(c1);
 
        //NumberFormat percent=NumberFormat.getPercentInstance();
-       //method chaning
+        //method chaining
        String perceresult = NumberFormat.getPercentInstance().format(0.25424);
        System.out.println(perceresult);
 
-//Userinput via Scanner
+//User input via Scanner
        Scanner scanner =new Scanner(System.in);
        System.out.print("Your age is : ");
       byte age1=Byte.parseByte(scanner.nextLine().trim());

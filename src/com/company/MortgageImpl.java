@@ -3,7 +3,7 @@ package com.company;
 import java.text.NumberFormat;
 import java.util.Scanner;
 
-public class Main {
+public class MortgageImpl {
 
     public static void main(String[] args) {
         double principle, emi, monthlyInterestRate, periodInMonths;
@@ -24,14 +24,13 @@ public class Main {
         System.out.println("Mortgage is :" + n1.format(emi));
 
         System.out.println("Your Interest is :" + n1.format(emi * periodInMonths - principle));
-System.out.println("Do you want to run Practice code? (Y/N):");
-		String practiseCode= sc1.nextLine();
-		
-		if (practiseCode.equalsIgnoreCase("Y")) {
-			JavaTutorialPractise.JavaPractise();
-		}
-		else {
-			System.out.println("Bye Bye!! Have a nice day.");
-		}
+        System.out.println("Do you want to run Practice code? (Y/N):");
+        String practiseCode = sc1.nextLine();
+
+        if (practiseCode.equalsIgnoreCase("Y")) {
+            JavaTutorialPractise.JavaPractise();
+        } else {
+            System.out.println("Bye Bye!! Have a nice day.");
+        }
     }
 }
